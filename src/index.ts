@@ -1,12 +1,14 @@
 import { Command } from "commander";
+import { init } from "./init";
 
 export const program = new Command();
 
+console.log("Hello");
+
 program
-    .argument("<string>", "string to log")
-    .action((message: string) => {
-        console.log(`Hello ${message}`);
-    })
-    .description("Command helper for tedy-cli");
+  .command("init")
+  .option("-p, --pnpm", "use pnpm for installation")
+  .action(init)
+  .description("Command helper for tedy-cli");
 
 program.parse(process.argv);
