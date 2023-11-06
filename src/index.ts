@@ -1,9 +1,8 @@
+#!/usr/bin/env node
 import { Command } from "commander";
 import { init } from "./init";
 
 export const program = new Command();
-
-console.log("Hello world");
 
 program
   .command("init")

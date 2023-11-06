@@ -1,5 +1,6 @@
 src
 .changeset
 .github
+.prettierrc
 pnpm-lock.yaml
 tsconfig.json
