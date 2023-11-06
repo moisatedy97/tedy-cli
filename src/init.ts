@@ -31,7 +31,7 @@ export const init = () => {
 
   // Copy prettierrc
   exec(
-    `curl https://raw.githubusercontent.com/moisatedy97/tedy-cli/main/.prettierrc > ./prettierrc`
+    `curl https://raw.githubusercontent.com/moisatedy97/tedy-cli/main/.prettierrc > ./.prettierrc`
   );
 
   // Create github workflows
