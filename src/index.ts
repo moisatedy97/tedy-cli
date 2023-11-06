@@ -3,7 +3,7 @@ import { init } from "./init";
 
 export const program = new Command();
 
-console.log("Hello");
+console.log("Hello world");
 
 program
   .command("init")

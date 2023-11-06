@@ -1,5 +1,11 @@
 # tedy-cli
 
+## 0.0.6
+
+### Patch Changes
+
+- Prova2
+
 ## 0.0.5
 
 ### Patch Changes
