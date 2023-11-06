@@ -7,13 +7,15 @@ export const init = () => {
   // Install package.json, tsconfig.json and typescript
   exec("pnpm init");
   exec("pnpm add -D typescript @types/node");
-  exec("pnpm tsc --init");
-  exec(`cp "./node_modules/tedy-cli/tsconfig.json" .`);
+  // exec("pnpm tsc --init");
+  exec(
+    `curl https://raw.githubusercontent.com/moisatedy97/tedy-cli/main/tsconfig.json > ./tsconfig.json`
+  );
 
   // Create index.ts
   exec("mkdir src");
   exec("touch src/index.ts");
-  exec('echo console.log(Hello world!") > src/index.ts');
+  exec('echo console.log("Hello world!") > src/index.ts');
 
   // Create gitignore
   exec("touch .gitignore");
@@ -21,7 +23,12 @@ export const init = () => {
   exec('echo "dist" > .gitignore');
 
   // Copy .npmignore
-  exec(`cp "./node_modules/tedy-cli/.npmignore" .`);
+  exec('echo "src" > .npmignore');
+  exec('echo ".changeset" > .npmignore');
+  exec('echo ".github" > .npmignore');
+  exec('echo ".prettierrc" > .npmignore');
+  exec('echo "pnpm-lock.yaml" > .npmignore');
+  exec('echo "tsconfig.json" > .npmignore');
 
   // Copy prettierrc
   exec(`cp "./node_modules/tedy-cli/.prettierrc" .`);
