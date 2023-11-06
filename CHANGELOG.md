@@ -5,7 +5,6 @@
 ### Patch Changes
 
 - Prova
-- 52f3e04: Added npmignore
 
 ## 0.0.4
 
