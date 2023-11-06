@@ -1,3 +1,12 @@
-#!/usr/bin/env node
+import { Command } from "commander";
 
-console.log("Hello world");
+export const program = new Command();
+
+program
+    .argument("<string>", "string to log")
+    .action((message: string) => {
+        console.log(`Hello ${message}`);
+    })
+    .description("Command helper for tedy-cli");
+
+program.parse(process.argv);

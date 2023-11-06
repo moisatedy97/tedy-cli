@@ -3,13 +3,12 @@
   "bin": {
     "tedy": "./dist/index.js"
   },
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Custom CLI for typescript projects",
   "main": "index.js",
   "scripts": {
-    "link-cli": "pnpm link --global tedy-cli",
-    "dev": "tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,6 +22,12 @@
   },
   "homepage": "https://github.com/moisatedy97/tedy-cli#readme",
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.8.10",
+    "tsup": "^7.2.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
   }
 }
