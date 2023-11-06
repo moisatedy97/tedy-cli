@@ -15,7 +15,6 @@ export const init = () => {
   // Create index.ts
   exec("mkdir src");
   exec("touch src/index.ts");
-  exec('echo console.log("Hello world!") > src/index.ts');
 
   // Create gitignore
   exec("touch .gitignore");

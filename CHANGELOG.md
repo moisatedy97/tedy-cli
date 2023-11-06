@@ -1,5 +1,11 @@
 # tedy-cli
 
+## 1.0.2
+
+### Patch Changes
+
+- Emptyed index.ts
+
 ## 1.0.1
 
 ### Patch Changes
