@@ -4,7 +4,6 @@
     "tedy": "./dist/index.js"
   },
   "version": "0.0.4",
-  "private": "false",
   "description": "Custom CLI for typescript projects",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
