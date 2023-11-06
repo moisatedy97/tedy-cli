@@ -3,14 +3,15 @@
   "bin": {
     "tedy": "./dist/index.js"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "private": "false",
   "description": "Custom CLI for typescript projects",
   "main": "index.js",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
     "ci": "pnpm run lint && pnpm run build",
-    "release": "pnpm run lint && pnpm run build && pnpm changeset publish"
+    "release": "pnpm run lint && pnpm run build && pnpm changeset"
   },
   "repository": {
     "type": "git",
