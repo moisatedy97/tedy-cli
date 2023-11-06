@@ -1,5 +1,11 @@
 # tedy-cli
 
+## 1.0.0
+
+### Major Changes
+
+- First publish
+
 ## 0.0.6
 
 ### Patch Changes
