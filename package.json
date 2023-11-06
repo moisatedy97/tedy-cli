@@ -3,10 +3,12 @@
   "bin": {
     "tedy": "./dist/index.js"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": "false",
   "description": "Custom CLI for typescript projects",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
@@ -17,9 +19,13 @@
     "type": "git",
     "url": "git+https://github.com/moisatedy97/tedy-cli.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cli",
+    "npm",
+    "pnpm"
+  ],
+  "author": "Tedy Gabriel Moisa",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/moisatedy97/tedy-cli/issues"
   },
