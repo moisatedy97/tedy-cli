@@ -30,7 +30,9 @@ export const init = () => {
   exec('echo "tsconfig.json" > .npmignore');
 
   // Copy prettierrc
-  exec(`cp "./node_modules/tedy-cli/.prettierrc" .`);
+  exec(
+    `curl https://raw.githubusercontent.com/moisatedy97/tedy-cli/main/.prettierrc > ./prettierrc`
+  );
 
   // Create github workflows
   exec("mkdir .github");
